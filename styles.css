@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+body{
+  padding-top: 70px;
+}
+.navbar {
+  background: #004080;
+  padding: 1rem 0;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar .logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+.navbar .nav-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+.navbar .nav-links a:hover {
+  color: #66ff99;
+}
+/* Banner */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  height: 400px;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.hero .btn {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+.hero .btn:hover {
+  background-color: #e04e32;
+}
+/* Produk */
+.main-content {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.feature-box {
+  display: flex;
+  justify-content: space-around;
+}
+.feature {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+}
+.feature h3 {
+  margin-bottom: 15px;
+}
+.feature p {
+  font-size: 1rem;
+}
+/* Tentang */
+.about {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.about p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+/* Kontak */
+.contact {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact-form button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #e04a32;
+}
+/* Footer */
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.footer .social-links li {
+    margin: 0 10px;
+}
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+footer .social-links a:hover {
+  color: #ff3333; /* merah saat hover */
+}
+/* Hero Section */
+#home {
+  position: relative;
+  background: url('https://picsum.photos/1200/800') no-repeat center center/cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* overlay hitam transparan */
+}
+
+#home .hero-content {
+  position: relative;
+  z-index: 1; /* supaya teks tidak ketutup overlay */
+}
+
+#home h1 {
+  font-size: 3rem;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+#home .btn {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+#home .btn:hover {
+  background-color: #e04e32;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain; /* agar gambar tidak gepeng */
+}
+/* Produk */
+#produk {
+  padding: 50px 0;
+  background-color: #f9f9f9; /* a. ubah jadi abu-abu muda */
+}
+
+#produk h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* kasih jarak antar kotak */
+}
+
+.feature {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* biar lebih elegan */
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px); /* animasi hover */
+}
+
+/* b + c. gambar produk */
+.feature img {
+  width: 50%;       /* gambar full lebar kotak */
+  height:50;      /* biar proporsional */
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.feature h3 {
+  margin-bottom: 15px;
+  color: #000; /* judul produk hitam */
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #000; /* deskripsi produk hitam */
+  margin-top: 10px;
+}
+.feature img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* opsional, biar sudutnya halus */
+}
+/* a. Background gradasi pada section #tentang */
+#tentang {
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #add8e6, #ffffff); /* biru muda ke putih */
+  text-align: center;
+}
+
+/* b. Paragraf di dalam #tentang rata kiri-kanan */
+#tentang p {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin: 10px auto;
+  max-width: 800px; /* biar paragraf ga terlalu panjang */
+}
+/* a. Background gambar pattern di section kontak */
+#kontak {
+  padding: 50px 0;
+  background: url('pattern.png');  /* ganti dengan path gambar pattern kamu */
+  background-size: cover;          /* biar gambar penuh */
+  background-repeat: repeat;       /* kalau pattern kecil, dia otomatis diulang */
+}
+
+/* b. Input & textarea saat fokus */
+#kontak input:focus,
+#kontak textarea:focus {
+  border: 2px solid blue;   /* border biru saat aktif */
+  outline: none;            /* hilangkan outline default browser */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* opsional: efek glowing biru */
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25d366; /* warna khas WhatsApp */
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #1ebe57;
+}
+#produk h2 {
+  color: #000;   /* warna hitam pekat */
+  text-align: center; /* biar tetap di tengah */
+  font-weight: bold;
+}
